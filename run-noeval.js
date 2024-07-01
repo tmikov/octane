@@ -41,6 +41,8 @@ load(base_dir + 'mandreel.js');
 load(base_dir + 'gbemu-part1.js');
 load(base_dir + 'gbemu-part2.js');
 load(base_dir + 'box2d.js');
+load(base_dir + 'zlib.js');
+load(base_dir + 'zlib-data-1.js');
 load(base_dir + 'typescript.js');
 load(base_dir + 'typescript-input.js');
 load(base_dir + 'typescript-compiler.js');
