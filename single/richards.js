@@ -339,6 +339,7 @@ BenchmarkSuite.prototype.RunSingleBenchmark = function(benchmark, data) {
     if (data != null) {
       data.runs += i;
       data.elapsed += elapsed;
+      print(data.runs, data.elapsed, "ms");
     }
   }
 
@@ -455,7 +456,7 @@ BenchmarkSuite.prototype.RunStep = function(runner) {
 // Martin Richards.
 
 
-var Richards = new BenchmarkSuite('Richards', [35302], [
+var Richards = new BenchmarkSuite('Richards', [10000], [
   new Benchmark("Richards", true, false, 8200, runRichards)
 ]);
 
@@ -493,7 +494,7 @@ function runRichards() {
     var msg =
         "Error during execution: queueCount = " + scheduler.queueCount +
         ", holdCount = " + scheduler.holdCount + ".";
-    throw new Error(msg);
+    throw msg;
   }
 }
 
