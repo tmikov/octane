@@ -30,6 +30,7 @@ var base_dir = '';
 load(base_dir + 'base.js');
 load(base_dir + 'interp-dispatch.js');
 load(base_dir + 'idisp2.js');
+load(base_dir + 'mandelbrot.js');
 load(base_dir + 'richards.js');
 load(base_dir + 'deltablue.js');
 load(base_dir + 'crypto.js');
